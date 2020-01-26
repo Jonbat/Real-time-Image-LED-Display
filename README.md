@@ -1,1 +1,0 @@
-# Real-time-32x32-Pi-Image-Displayer
