@@ -1,10 +1,8 @@
 # Real-time-32x32-Pi-Image-Displayer
-Display live images taken from a phone or other wi-fi device on a 32x32 LED matrix. 
-An IR remote can be configured to scoll through 10 different example display files. 
+Take images from a phone or other wi-fi device and display it in real-time on a 32x32 LED matrix!
+An IR remote can be configured to scoll through 10 different example display files.
 Also, an ambient light mode can be used to control the display using surrounding light.
-
-## Code
-
+Check out my [youtube video](https://youtu.be/R8VW5WCSrXk) for some step-by-step installation instructions and demos. 👌
  
 ## Materials
 A Raspberry Pi newer than version 1 recommended to adequately drive the display.
@@ -17,3 +15,7 @@ A Raspberry Pi newer than version 1 recommended to adequately drive the display.
 
 ## Installation Help
 * [Pi Hat Installation](https://learn.adafruit.com/adafruit-rgb-matrix-plus-real-time-clock-hat-for-raspberry-pi)
+
+## References
+* [RPI RGB LED Matrix Library](https://github.com/hzeller/rpi-rgb-led-matrix)
+* [IR Remote Module](https://github.com/owainm713/IR-Remote-Receiver-Python-Module)
