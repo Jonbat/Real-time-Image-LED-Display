@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>LED Display App</title>
+
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Import materialize.css-->
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <title>Jonathan Club Website</title>
+    </head>
+	
+    <body >
+	<nav class='blue'>
+    <div class="nav-wrapper">
+      <ul class="left">
+        <li class="active"><a href="webApp.html">Display App</a></li>
+      </ul>
+    </div>
+	</nav>
+	<h1 style="text-align:center">LED Display App</h1>
+	
+    <div class="container">
+        <!-- <img src="coolFace.jpg" style="text-align:center"> -->
+
+        <h5>Select a mode:</h5>
+        <h2></h2>
+		<div class="col s12 m6" style="text-align:center">
+            <a class="waves-effect waves-light btn-large" id="irRemote">IR Remote Mode<i class="material-icons left">settings_remote</i></a>
+            <h2></h2>
+            <a class="waves-effect waves-light btn-large" id="photoSensor">Photo Sensor Mode<i class="material-icons left">brightness_5</i></a>
+            <h2></h2>
+            <a class="waves-effect waves-light btn-large" id="demoScroll">Scroll Through Demos<i class="material-icons left">autorenew</i></a>
+            <h2></h2>
+            <a class="waves-effect waves-light btn-large" id="stop">Stop<i class="material-icons left">stop</i></a>
+        </div>		
+	</div>
+
+	</body>
+	
+    <script type="text/javascript">
+
+    var demoNumber = 3;
+    
+    function kill() {
+        var req;
+		req=new XMLHttpRequest();
+		req.open("GET", '/kill',true);
+		req.send();
+    }
+
+    document.getElementById('irRemote').onclick=function(){
+        kill();
+		var req;
+		req=new XMLHttpRequest();
+		req.open("GET", '/irRemote',true);
+		req.send();
+	};
+
+	document.getElementById('photoSensor').onclick=function(){
+        kill();
+		var req;
+		req=new XMLHttpRequest();
+		req.open("GET", '/photoSensor',true);
+		req.send();
+	};
+	
+    document.getElementById('demoScroll').onclick= async function(){ 
+        if (demoNumber >= 11) {
+        demoNumber = 3;
+        } else {
+            demoNumber++;
+        }
+        var req;
+        req=new XMLHttpRequest(demoNumber);
+        req.open("GET", '/demoScroll?demoNumber=' + demoNumber,true);
+        req.send(); 
+	};
+	
+	// Stop
+	document.getElementById('stop').onclick=function(){
+        	var req;
+		req=new XMLHttpRequest();
+		req.open("GET", '/killAll',true);
+		req.send();
+	};
+	
+	// ToDo: run kill after changing any mode
+	// 1. IR remote mode
+	// 2. Photosensor mode
+
+	</script>
+</html>
+
+
+
+
+
+
+
+
