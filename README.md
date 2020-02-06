@@ -2,7 +2,7 @@
 Take images from a phone or other wi-fi device and display it in real-time on a 32x32 LED matrix!
 An IR remote can be configured to scoll through 10 different example display files.
 Also, an ambient light mode can be used to control the display using surrounding light.
-Check out my [youtube video](https://youtu.be/R8VW5WCSrXk) for some step-by-step installation instructions and demos. 👌
+Check out my [youtube video](https://youtu.be/txqw9IOIMH0) for some step-by-step installation instructions and demos. 👌
  
 ## Materials
 A Raspberry Pi newer than version 1 recommended to adequately drive the display.
