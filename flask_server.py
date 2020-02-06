@@ -45,7 +45,7 @@ def upload_image():
             return redirect(request.url)
 
         if file and allowed_file(file.filename):
-            # The image file seems valid! Detect faces and return the result.
+            # The image file seems valid!
             return save_and_show_image(file)
 
 def allowed_file(filename):
@@ -73,12 +73,6 @@ def play_demo():
     state["process"] = subprocess.Popen(["sudo", "./rpi-rgb-led-matrix/examples-api-use/demo", "-D", demoNumber], stdout=subprocess.PIPE, 
                        shell=False, preexec_fn=os.setsid)
     return demoNumber
-
-@app.route('/')
-def turn_on():
-    state["process"] = subprocess.Popen(["sudo", "./rpi-rgb-led-matrix/examples-api-use/demo", "-D", "6"], stdout=subprocess.PIPE, 
-                       shell=False, preexec_fn=os.setsid)
-    return "Yes, turn it on!"
 
 @app.route('/kill')
 def turn_off():
