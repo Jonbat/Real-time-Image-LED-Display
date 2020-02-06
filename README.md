@@ -17,8 +17,7 @@ A Raspberry Pi newer than version 1 recommended to adequately drive the display.
 * An Android or iOS mobile device that can take pictures
 
 ## Installation Help
-All project code, except 
-The *image_capture_mobile_app* folder runs on the Android or iOS device and everything else runs on the Raspberry Pi. 
+The 'image_capture_mobile_app' folder runs on the mobile device and everything else runs on the Raspberry Pi. 
 * [Pi Hat Installation](https://learn.adafruit.com/adafruit-rgb-matrix-plus-real-time-clock-hat-for-raspberry-pi)
 * [Hardware and software integration](https://youtu.be/txqw9IOIMH0)
 * [Mobile Image Capture App Installation](https://flutter.dev/docs/get-started/install)
