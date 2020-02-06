@@ -1,4 +1,4 @@
-![](mouse_demo.gif)
+![](mouse_demo.gif | width=150)
 
 # Real-time-32x32-Pi-Image-Displayer
 Take images from a phone and display it in real-time on a 32x32 LED matrix!
@@ -27,8 +27,8 @@ The 'image_capture_mobile_app' folder runs on the mobile device and everything e
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 * [Python](https://www.python.org/)
 
-## Included Libraries
+## References
 * [RPI RGB LED Matrix Library](https://github.com/hzeller/rpi-rgb-led-matrix)
 * [IR Remote Module](https://github.com/owainm713/IR-Remote-Receiver-Python-Module)
-* [Mobile Image Capture](https://www.coderzheaven.com/2019/04/30/upload-image-in-flutter-using-php)
+* [Mobile Image Capture Application](https://www.coderzheaven.com/2019/04/30/upload-image-in-flutter-using-php)
 
