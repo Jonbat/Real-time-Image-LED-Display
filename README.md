@@ -1,4 +1,4 @@
-<mouse_demo.gif width="150">
+<img src="mouse_demo.gif" width="150">
 
 # Real-time-32x32-Pi-Image-Displayer
 Take images from a phone and display it in real-time on a 32x32 LED matrix!
